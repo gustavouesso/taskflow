@@ -1,0 +1,11 @@
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Python API
+        run: docker build -t python-api ./backend/python-api
+      - name: Build Node Worker
+        run: docker build -t node-worker ./backend/node-worker
