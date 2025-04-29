@@ -1,0 +1,16 @@
+{
+    "name": "node-worker",
+    "version": "1.0.0",
+    "main": "dist/main.js",
+    "scripts": {
+      "start": "tsc && node dist/main.js"
+    },
+    "dependencies": {
+      "@nestjs/common": "^10.0.0",
+      "@nestjs/core": "^10.0.0",
+      "reflect-metadata": "^0.1.13"
+    },
+    "devDependencies": {
+      "typescript": "^5.0.0"
+    }
+  }
